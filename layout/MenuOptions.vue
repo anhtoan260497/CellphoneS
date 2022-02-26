@@ -25,6 +25,7 @@ export default {
         {
           title: 'Điện Thoại',
           img: 'phone.svg',
+          url : 'https://cellphones.com.vn/mobile.html',
           children: [
             {
               title: 'Apple',
@@ -70,6 +71,7 @@ export default {
         {
           title: 'Laptop',
           img: 'laptop.svg',
+          url:'https://cellphones.com.vn/laptop.html',
           children: [
             {
               title: 'Mac',
@@ -128,6 +130,7 @@ export default {
         {
           title: 'Tablet',
           img: 'tablet.svg',
+          url : 'https://cellphones.com.vn/tablet.html',
           children: [
             {
               title: 'iPad Pro',
@@ -164,6 +167,7 @@ export default {
         {
           title: 'Âm thanh',
           img: 'earphone.svg',
+          url : 'https://cellphones.com.vn/thiet-bi-am-thanh.html',
           children: [
             {
               title: 'Loa',
@@ -188,6 +192,7 @@ export default {
         {
           title: 'Đồng hồ',
           img: 'watch.svg',
+          url : 'https://cellphones.com.vn/do-choi-cong-nghe.html',
           children: [
             { title: 'Apple Watch', children: ['Series 6', 'SE', 'Series 7'] },
             { title: 'Samsung' },
@@ -204,6 +209,7 @@ export default {
         {
           title: 'Nhà thông minh',
           img: 'smarthome.svg',
+          url : 'https://cellphones.com.vn/nha-thong-minh.html',
           children: [
             { title: 'Máy hút bụi' },
             { title: 'Khoá thông minh' },
@@ -222,6 +228,7 @@ export default {
         {
           title: 'Phụ kiện',
           img: 'cable.svg',
+          url : 'https://cellphones.com.vn/phu-kien.html',
           children: [
             {
               title: 'Phụ kiện Apple',
@@ -271,6 +278,7 @@ export default {
         {
           title: 'Thu cũ',
           img: 'tradeup.svg',
+          url : 'https://cellphones.com.vn/thu-cu-doi-moi',
           children: [
             { title: 'CellphoneS' },
             { title: 'SKTel' },
@@ -280,6 +288,7 @@ export default {
         {
           title: 'Hàng cũ',
           img: 'exchange.svg',
+          url : 'https://cellphones.com.vn/hang-cu.html',
           children: [
             { title: 'Điện thoại' },
             { title: 'Máy tính bảng' },
@@ -294,14 +303,17 @@ export default {
         {
           title: 'Dịch vụ SIM',
           img: 'sim.svg',
+          url : 'https://cellphones.com.vn/sim-3g-4g-nghe-goi.html'
         },
         {
           title: 'Tin công nghệ',
           img: 'news.svg',
+          url : 'https://cellphones.com.vn/sforum/'
         },
         {
           title: 'Khuyến mãi',
           img: 'promotion.svg',
+          url : 'https://cellphones.com.vn/danh-sach-khuyen-mai'
         },
       ],
     }

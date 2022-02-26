@@ -41,39 +41,39 @@
             @focus="handleIsActive()"
           />
         </div>
-        <div class="hotline-contact">
+        <a class="hotline-contact" href="tel:18002044">
           <img style="width: 28px" src="../static/NavBarIcon/hotlineicon.svg" />
           <div class="hotline-info">
             <p>Gọi mua hàng</p>
             <h2>1800.2097</h2>
           </div>
-        </div>
-        <div class="location-contact">
+        </a>
+        <a class="location-contact" href="https://cellphones.com.vn/dia-chi-cua-hang">
           <img
             style="width: 24px"
             src="../static/NavBarIcon/locationicon.svg"
           />
           <p>Cửa hàng gần bạn</p>
-        </div>
-        <div class="tracking-contact">
+        </a>
+        <a class="tracking-contact" href="https://cellphones.com.vn/tra-cuu-don-hang-online">
           <img
             style="transform: scale(1.1)"
             src="../static/NavBarIcon/trackingicon.svg"
           />
           <p>Tra cứu đơn hàng</p>
-        </div>
-        <div class="cart-contact">
+        </a>
+        <a  class="cart-contact" href="https://cellphones.com.vn/cart/">
           <h3 class="cart-quantity">1</h3>
           <img
             style="transform: scale(1.3)"
             src="../static/NavBarIcon/carticon.svg"
           />
           <p>Giỏ hàng</p>
-        </div>
-        <div class="smem-contact">
+        </a>
+        <a class="smem-contact" href="https://cellphones.com.vn/smember/">
           <img style="width: 26px" src="../static/NavBarIcon/smemicon.svg" />
           <p>Smember</p>
-        </div>
+        </a>
       </div>
     </nav>
     <nav class="navbar-container-fluid-mobile">
@@ -167,7 +167,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 .navbar-container-fluid {
@@ -236,7 +236,7 @@ export default {
 }
 
 .location-option-item {
-  width: calc(100% - 40px);
+  width: 100%;
   height: 26px;
   padding: 3px 20px;
   cursor: pointer;
@@ -265,12 +265,14 @@ export default {
 
 .search-input {
   width: 274px;
-  height: 32px;
+  height: 40px;
   border-radius: 10px;
   outline: none;
   border: none;
   padding: 5px 5px 5px 30px;
   font-size: 15px;
+  background-color: white;
+  color: black;
 }
 
 .hotline-contact {
@@ -308,7 +310,7 @@ export default {
 .location-contact,
 .tracking-contact,
 .cart-contact {
-  width: 100px;
+  width: 110px;
   height: 42px;
   display: flex;
   gap: 8px;
@@ -321,7 +323,7 @@ export default {
 }
 
 .cart-contact {
-  width: 60px;
+  width: 65px;
 }
 
 .location-contact > p,
@@ -421,7 +423,7 @@ export default {
 
   .cart-contact {
     padding: 5px 0;
-    height: 50px;
+    height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -454,6 +456,7 @@ export default {
 
   .search-input {
     width: 100%;
+    height: 40px;
     margin-left: -18px;
   }
 

@@ -18,7 +18,9 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [
+    // '~assets/css/main.css'
+  ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -32,12 +34,29 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/vuetify',
+    '@nuxtjs/style-resources',
+
+    // With options
+    [
+      '@nuxtjs/vuetify',
+      {
+        /* module options */
+      },
+    ],
   ],
+  styleResources: {
+    // scss: [
+    //   '~assets/scss/mixins.scss',
+    //   '~assets/scss/variables.scss'
+    // ]
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/vuetify'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -45,7 +64,16 @@ export default {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
   },
+  vuetify: {
+    // customVariables: ["~/assets/variables.scss"],
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+  // nuxt.config.js
+
+    server: {
+      port: 8080 // default: 3000
+    }
+
 }

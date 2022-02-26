@@ -3,7 +3,7 @@
     @mouseenter="handleOnFirstChild(idx)"
     @mouseleave="handleLeaveFirstChild()"
   >
-    <li class="menu-option">
+    <a class="menu-option" :href="type.url">
       <div class="option-description">
         <img class="icon" :src="icon"/>
         <p>{{ type.title }}</p>
@@ -13,7 +13,7 @@
         style="width: 8px"
         src="../static/MenuOptionsIcon/angle.svg"
       />
-    </li>
+    </a>
     <ul
       v-show="isHoverFirstChild && type.children"
       class="menu-first-child-options"
@@ -91,6 +91,7 @@ export default {
   padding: 0 8px;
   position: relative;
   z-index: 1;
+  color:black;
 }
 
 .menu-option:hover {

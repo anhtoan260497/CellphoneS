@@ -1,30 +1,48 @@
 <template>
-  <div>
-    <NavBar :isShowLocation="isShowLocation"  @setIsActive="handleChangeActive()" @setFocusInput="handleFocusInput" />
+  <div style="position:relative">
+    <NavBar
+      :isShowLocation="isShowLocation"
+      @setIsActive="handleChangeActive()"
+      @setFocusInput="handleFocusInput"
+    />
     <div
       :class="{ active: isActive, 'none-active': !isActive }"
       @click="handleClickActiveArea()"
     ></div>
     <div class="header-container">
       <MenuOptions />
+      <HomeCarousel />
+      <PromotionHome />
     </div>
+    <HomeCarouselMobile />
+
+    <LongPromotion />
   </div>
 </template>
 
 <script>
 import NavBar from '../components/NavBar.vue'
 import MenuOptions from '../layout/MenuOptions.vue'
+import HomeCarousel from '../layout/HomeCarousel.vue'
+import PromotionHome from '../layout/PromotionHome.vue'
+import LongPromotion from '../components/LongPromotion.vue'
+import HomeCarouselMobile from '../layout/HomeCarouselMobile.vue'
+
 export default {
   name: 'IndexPage',
   components: {
     NavBar,
     MenuOptions,
+    HomeCarousel,
+    PromotionHome,
+    LongPromotion,
+    HomeCarouselMobile,
   },
   data() {
     return {
       isActive: false,
       isShowLocation: false,
-      isFocusInput : false
+      isFocusInput: false,
     }
   },
   methods: {
@@ -37,19 +55,20 @@ export default {
       this.isActive = true
     },
     handleClickActiveArea() {
-      this.isActive= false
-      this.isShowLocation= false
+      this.isActive = false
+      this.isShowLocation = false
       this.isFocusInput = false
-    }
+    },
   },
 }
 </script>
 
-<style>
+<style lang="scss">
 * {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 .header-container {
@@ -81,8 +100,10 @@ export default {
 
 @media screen and (max-width: 767px) {
   .active,
-  .none-active {
+  .none-active,
+  .header-container {
     display: none;
-  }
+   }
+    //hide carousel, menu options 
 }
 </style>

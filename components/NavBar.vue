@@ -16,7 +16,7 @@
               <!-- lấy giá trị của current location để hiển thị -->
             </div>
           </div>
-          <div v-show="isActive" class="location-option">
+          <div v-show="isShowLocation" class="location-option">
             <div
               v-for="(location, idx) in locations"
               :key="idx"
@@ -92,7 +92,7 @@
                 <h3>{{ locations[currentLocation].name }}</h3>
               </div>
             </div>
-            <div v-show="isActive" class="location-option">
+            <div v-show="isShowLocation" class="location-option">
               <div
                 v-for="(location, idx) in locations"
                 :key="idx"
@@ -130,7 +130,7 @@
 export default {
   name: 'NavBar',
   props: {
-    isActive: {
+    isShowLocation: {
       type: Boolean,
       default: () => {
         return false
@@ -159,6 +159,9 @@ export default {
     handleChangeLocation(idx) {
       this.currentLocation = idx
       this.$emit('setIsActive')
+    },
+    handleIsActive() {
+      this.$emit('setFocusInput')
     },
   },
 }

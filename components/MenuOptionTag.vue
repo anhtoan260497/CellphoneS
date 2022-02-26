@@ -5,7 +5,7 @@
   >
     <li class="menu-option">
       <div class="option-description">
-        <img :src="type.img" />
+        <img class="icon" :src="icon"/>
         <p>{{ type.title }}</p>
       </div>
       <img
@@ -64,7 +64,11 @@ export default {
       isHoverIdx: null,
     }
   },
-  watch: {},
+  computed: {
+    icon(){
+      return require(`@/static/MenuOptionsIcon/${this.type.img}`)
+    }
+  },
   methods: {
     handleOnFirstChild(key) {
       this.isHoverFirstChild = false
@@ -125,4 +129,10 @@ export default {
   display: flex;
   justify-content: space-between;
 }
+
+.icon{
+  width : 24px;
+  margin-right: 8px;
+}
+
 </style>

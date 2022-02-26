@@ -69,7 +69,7 @@ export default {
         },
         {
           title: 'Laptop',
-          img: '../static/MenuOptionsIcon/laptop.svg',
+          img: 'laptop.svg',
           children: [
             {
               title: 'Mac',
@@ -127,7 +127,7 @@ export default {
         },
         {
           title: 'Tablet',
-          img: '../static/MenuOptionsIcon/tablet.svg',
+          img: 'tablet.svg',
           children: [
             {
               title: 'iPad Pro',
@@ -163,7 +163,7 @@ export default {
         },
         {
           title: 'Âm thanh',
-          img: '../static/MenuOptionsIcon/earphone.svg',
+          img: 'earphone.svg',
           children: [
             {
               title: 'Loa',
@@ -187,7 +187,7 @@ export default {
         },
         {
           title: 'Đồng hồ',
-          img: '../static/MenuOptionsIcon/watch.svg',
+          img: 'watch.svg',
           children: [
             { title: 'Apple Watch', children: ['Series 6', 'SE', 'Series 7'] },
             { title: 'Samsung' },
@@ -203,7 +203,7 @@ export default {
         },
         {
           title: 'Nhà thông minh',
-          img: '../static/MenuOptionsIcon/smarthome.svg',
+          img: 'smarthome.svg',
           children: [
             { title: 'Máy hút bụi' },
             { title: 'Khoá thông minh' },
@@ -221,7 +221,7 @@ export default {
         },
         {
           title: 'Phụ kiện',
-          img: '../static/MenuOptionsIcon/cable.svg',
+          img: 'cable.svg',
           children: [
             {
               title: 'Phụ kiện Apple',
@@ -270,7 +270,7 @@ export default {
         },
         {
           title: 'Thu cũ',
-          img: '../static/MenuOptionsIcon/tradeup.svg',
+          img: 'tradeup.svg',
           children: [
             { title: 'CellphoneS' },
             { title: 'SKTel' },
@@ -279,7 +279,7 @@ export default {
         },
         {
           title: 'Hàng cũ',
-          img: '../static/MenuOptionsIcon/exchange.svg',
+          img: 'exchange.svg',
           children: [
             { title: 'Điện thoại' },
             { title: 'Máy tính bảng' },
@@ -293,15 +293,15 @@ export default {
         },
         {
           title: 'Dịch vụ SIM',
-          img: '../static/MenuOptionsIcon/sim.svg',
+          img: 'sim.svg',
         },
         {
           title: 'Tin công nghệ',
-          img: '../static/MenuOptionsIcon/news.svg',
+          img: 'news.svg',
         },
         {
           title: 'Khuyến mãi',
-          img: '../static/MenuOptionsIcon/promotion.svg',
+          img: 'promotion.svg',
         },
       ],
     }

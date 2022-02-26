@@ -1,9 +1,9 @@
 <template>
   <div>
-    <NavBar :isActive="isActive" @setIsActive="handleChangeActive()" />
+    <NavBar :isShowLocation="isShowLocation"  @setIsActive="handleChangeActive()" @setFocusInput="handleFocusInput" />
     <div
       :class="{ active: isActive, 'none-active': !isActive }"
-      @click="isActive = false"
+      @click="handleClickActiveArea()"
     ></div>
     <div class="header-container">
       <MenuOptions />
@@ -23,13 +23,24 @@ export default {
   data() {
     return {
       isActive: false,
-      isShowLocation: this.isActive,
+      isShowLocation: false,
+      isFocusInput : false
     }
   },
   methods: {
     handleChangeActive() {
       this.isActive = !this.isActive
+      this.isShowLocation = !this.isShowLocation
     },
+    handleFocusInput() {
+      this.isFocusInput = true
+      this.isActive = true
+    },
+    handleClickActiveArea() {
+      this.isActive= false
+      this.isShowLocation= false
+      this.isFocusInput = false
+    }
   },
 }
 </script>

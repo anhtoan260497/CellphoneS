@@ -51,12 +51,14 @@ export default {
 <style>
 @media screen and (max-width: 767px) {
   .carousel-container-mobile {
-    width: 90%;
+    width: 94%;
     height: 350px !important;
     position: absolute;
+    left : 3%;
     top: 160px;
     border-radius: 10px;
     display: block;
+    margin: auto;
   }
 
   .carousel-options {

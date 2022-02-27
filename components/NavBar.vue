@@ -371,12 +371,13 @@ export default {
   .navbar-container-fluid-mobile {
     display: block;
     width: 100%;
-    height: 50vh;
+    height: 500px;
+    position: relative;
   }
 
   .navbar-background-mobile {
-    width: 100vw;
-    height: 50%;
+    width: 100%;
+    height: 70%;
     background: linear-gradient(180deg, #e0052b, #cc5d6f);
     border-radius: 0 0 50px 50px;
     position: absolute;
@@ -388,13 +389,13 @@ export default {
     margin: auto;
     padding-top: 10px;
     height: 130px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-auto-rows: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    border:1px solid blue;
   }
 
   .menu-logo {
-    width: 80%;
+    width: 50%;
     object-fit: cover;
     height: 60px;
   }

@@ -391,7 +391,6 @@ export default {
     height: 130px;
     display: flex;
     justify-content: space-between;
-    border:1px solid blue;
   }
 
   .menu-logo {

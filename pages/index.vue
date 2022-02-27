@@ -72,7 +72,7 @@ export default {
 }
 
 .header-container {
-  width: 1300px;
+  width: 1200px;
   margin: auto;
   border: 1px solid red;
   display: flex;

@@ -179,7 +179,7 @@ export default {
 }
 
 .navbar-container {
-  width: 1300px;
+  width: 1200px;
   height: 64px;
   margin: auto;
   display: flex;

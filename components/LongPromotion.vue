@@ -48,7 +48,7 @@ export default {
 }
 
 .long-promotion > img {
-  width: 1300px;
+  width: 1200px;
   object-fit: cover;
   border-radius: 10px;
 }

@@ -41,7 +41,7 @@ export default {
   },
   mounted() {
     const getData = async () => {
-      const fetchData = await axios.get(` http://localhost:3000/datas`)
+      const fetchData = await axios.get(`https://my-cellphones-api.herokuapp.com/datas`)
       this.datas = fetchData.data
     }
     getData()

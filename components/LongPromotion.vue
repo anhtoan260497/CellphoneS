@@ -63,7 +63,7 @@ export default {
 
   .long-promotion-mobile {
     display: block;
-    width: 94%;
+    width: 95%;
     margin : 16px 3% ;
     border-radius: 10px;
     overflow: hidden;

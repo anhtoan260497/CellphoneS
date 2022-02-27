@@ -457,11 +457,11 @@ export default {
   .search-input {
     width: 100%;
     height: 40px;
-    margin-left: -18px;
+    margin-left: -10px;
   }
 
   .search-icon {
-    left: 8px;
+    left: 12px;
   }
 }
 </style>

@@ -19,7 +19,7 @@
           ><img
             style="
               width: 100%;
-              height: 250px;
+              height: 300px;
               object-fit: cover;
               border-radius: 10px;
             "
@@ -52,7 +52,7 @@ export default {
 @media screen and (max-width: 767px) {
   .carousel-container-mobile {
     width: 90%;
-    height: 302px !important;
+    height: 350px !important;
     position: absolute;
     top: 160px;
     border-radius: 10px;

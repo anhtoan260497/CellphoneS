@@ -407,7 +407,7 @@ export default {
   .location-current {
     width: 80%;
     height: 60px;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   .location-option {

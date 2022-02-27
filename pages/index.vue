@@ -63,8 +63,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
-* {
+<style >
+*{
   margin: 0;
   padding: 0;
   list-style: none;
@@ -74,7 +74,6 @@ export default {
 .header-container {
   width: 1200px;
   margin: auto;
-
   display: flex;
   justify-content: space-between;
   padding: 80px 0 0;
@@ -104,6 +103,5 @@ export default {
   .header-container {
     display: none;
    }
-    //hide carousel, menu options 
 }
 </style>

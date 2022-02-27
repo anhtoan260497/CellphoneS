@@ -38,7 +38,7 @@ export default {
 
 <style>
 .long-promotion {
-  width: 100%;
+  width: 1200px;
   height: 80px;
   margin: 12px auto;
   display: flex;
@@ -65,7 +65,7 @@ export default {
  .long-promotion-mobile {
    display: block;
    width: 100vw;
-  margin-top : 80px;
+  margin-top : 200px;
  }
 
  .long-promotion-mobile > img {

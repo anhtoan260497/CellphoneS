@@ -20,22 +20,23 @@
       @mouseenter="isHoverSecondChild = true"
       @mouseleave="isHoverSecondChild = false"
     >
-      <li
+      <a
         v-for="(children, index) in type.children"
         :key="index"
         class="menu-option"
+        :href="children.url"
       >
         <!-- lặp qua từng phần tử của type.children -->
         <div class="option-description flex">
           <p>{{ children.title }}</p>
           <img
             v-show="children.children"
-            style="width: 8px"
+            style="width: 8px "
             src="../static/MenuOptionsIcon/angle.svg"
           />
           <!-- nếu có thêm mảng children thì tiếp tục hiển thị icon -->
         </div>
-      </li>
+      </a>
     </ul>
   </div>
 </template>
@@ -99,7 +100,7 @@ export default {
 }
 
 .option-description {
-  width: 90%;
+  width: 100%;
   height: 31px;
   font-size: 13px;
   font-weight: 600;
